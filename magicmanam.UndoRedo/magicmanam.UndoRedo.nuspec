@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>magicmanam.UndoRedo</id>
+    <version>1.1.0</version>
+    <title>Tiny Undo/Redo framework for .NET apps</title>
+    <authors>Andrei Muski</authors>
+    <owners>magicmanam</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/magicmanam/undo-redo</projectUrl>
+    <description>Easy and lightweight Undo/Redo operations implementation</description>
+    <releaseNotes>Added nested actions support</releaseNotes>
+    <copyright>Copyright 2021 magicmanam</copyright>
+    <tags>Undo Redo Undoable Operation Framework Library Lightweight</tags>
+  </metadata>
+</package>

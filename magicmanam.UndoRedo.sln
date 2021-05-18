@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "magicmanam.UndoRedo", "magicmanam.UndoRedo\magicmanam.UndoRedo.csproj", "{2A0EA8A3-5E8C-411F-BF3D-B2D67AD5E956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "magicmanam.UndoRedo.Tests", "magicmanam.UndoRedo.Tests\magicmanam.UndoRedo.Tests.csproj", "{C0C442B7-BE9E-497C-AFA9-7CC9FE1E3908}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{804928BA-940F-461F-A327-E68E4159FC85}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A0EA8A3-5E8C-411F-BF3D-B2D67AD5E956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0EA8A3-5E8C-411F-BF3D-B2D67AD5E956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A0EA8A3-5E8C-411F-BF3D-B2D67AD5E956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A0EA8A3-5E8C-411F-BF3D-B2D67AD5E956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C442B7-BE9E-497C-AFA9-7CC9FE1E3908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C442B7-BE9E-497C-AFA9-7CC9FE1E3908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C442B7-BE9E-497C-AFA9-7CC9FE1E3908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C442B7-BE9E-497C-AFA9-7CC9FE1E3908}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDE120C3-30CB-49D4-B805-AD6B814F22C0}
+	EndGlobalSection
+EndGlobal
