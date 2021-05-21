@@ -78,7 +78,7 @@ namespace magicmanam.UndoRedo
                 this._undoActions.Push(lastAction);
 
                 this._stateKeeper.UndoableState = lastAction.StateOnStart;
-                this.UndoableAction?.Invoke(this, new UndoableActionEventArgs<T>(lastAction, true, false) { CanUndo = this._undoActions.Any(), CanRedo = true });
+                this.UndoableAction?.Invoke(this, new UndoableActionEventArgs<T>(lastAction, true, false) { CanUndo = this._actions.Any(), CanRedo = true });
             }
         }
         public void Redo()

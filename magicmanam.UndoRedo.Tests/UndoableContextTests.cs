@@ -124,6 +124,39 @@ namespace magicmanam.UndoRedo.Tests
             Assert.AreEqual("Outer", this._actionsList.Single());
         }
 
+        [TestMethod]
+        public void When_no_actions_to_undo_event_arguments_states_that_could_not_undo_more()
+        {
+            // Arrange
+            using (var action1 = this._undoableContext.StartAction())
+            {
+                this._component.A = 1;
+            }
+
+            using (var action2 = this._undoableContext.StartAction())
+            {
+                this._component.A = 2;
+            }
+
+            var args = new List<UndoableActionEventArgs<List<int>>>();
+            this._undoableContext.UndoableAction += (object sender, UndoableActionEventArgs<List<int>> e) =>
+            {
+                args.Add(e);
+            };
+
+            // Act
+
+            this._undoableContext.Undo();
+            this._undoableContext.Undo();
+
+            // Assert
+            Assert.AreEqual(true, args[0].CanUndo);
+            Assert.AreEqual(true, args[0].CanRedo);
+
+            Assert.AreEqual(false, args[1].CanUndo);
+            Assert.AreEqual(true, args[1].CanRedo);
+        }
+
         private void _UndoableAction(object sender, UndoableActionEventArgs<List<int>> e)
         {
             this._actionsList.Add(e.Action.Name);
