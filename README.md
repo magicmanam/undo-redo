@@ -23,10 +23,10 @@ using (var action = UndoableContext<AppState>.Current.StartAction("Sample action
 5) Now you can undo/redo any your action made in scope of current undoable context:
 ```csharp
 UndoableContext<AppState>.Current.Undo();
-// Stateful component returns the previous state now
+// statefulComponentInstance returns the previous state now
 // or
 UndoableContext<AppState>.Current.Redo();
-// Rollback the previous Undo operation
+// Rollbacks the previous Undo operation
 ```
 6) You can subscribe on any action in scope of the current undoable context including cancelled actions and Undo/Redo operations:
 ```csharp
@@ -38,13 +38,13 @@ UndoableContext<AppState>.Current.UndoableAction += (object sender, UndoableActi
     }
     else
     {
-        if (e.IsRedo)
-        {
-             // The latest undo operation was restored
-        }
-        else if (e.IsUndo)
+        if (e.IsUndo)
         {
              // The latest action was undone
+        }
+        else if (e.IsRedo)
+        {
+             // The latest undo operation was restored
         }
         else
         {
