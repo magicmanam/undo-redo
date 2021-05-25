@@ -54,3 +54,5 @@ UndoableContext<AppState>.Current.UndoableAction += (object sender, UndoableActi
     }
 };
 ```
+
+Icon's source: https://www.shareicon.net/religion-philosophy-taoism-signs-yin-yang-balance-748079
