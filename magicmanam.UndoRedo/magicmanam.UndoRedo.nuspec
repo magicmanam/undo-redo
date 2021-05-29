@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>magicmanam.UndoRedo</id>
-    <version>1.1.2</version>
+    <version>1.1.3</version>
     <title>Tiny Undo/Redo framework for .NET apps</title>
     <authors>Andrei Muski</authors>
     <owners>magicmanam</owners>
@@ -10,7 +10,7 @@
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/magicmanam/undo-redo</projectUrl>
     <description>Easy and lightweight Undo/Redo operations implementation</description>
-    <releaseNotes>Adds icon to the package</releaseNotes>
+    <releaseNotes>Removes icon from content</releaseNotes>
     <copyright>Copyright 2021 magicmanam</copyright>
     <tags>Undo Redo Undoable Operation Framework Library Lightweight</tags>
     <icon>images\icon.png</icon>
