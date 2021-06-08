@@ -4,9 +4,9 @@ namespace magicmanam.UndoRedo
 {
     public class UndoableActionEventArgs<T> : EventArgs where T : class
     {
-        internal UndoableActionEventArgs(UndoableAction<T> action, bool isUndo = false, bool isRedo = false)
+        internal UndoableActionEventArgs(UndoableAction<T> action, bool isUndo, bool isRedo)
         {
-            this.Action = action;
+            this.Action = action ?? throw new ArgumentNullException(nameof(action));
             this.IsUndo = isUndo;
             this.IsRedo = isRedo;
         }

@@ -83,9 +83,14 @@ UndoableContext<AppState>.Current.UndoableAction += (object sender, UndoableActi
         }
         else
         {
-	     // e.Action.Name == "Sample action name"
+             // e.Action.Name == "Sample action name"
              // Ordinary action on application state was performed
         }
+    }
+
+    if (e.Action.IsNested)
+    {
+        // Action is nested
     }
 };
 ```

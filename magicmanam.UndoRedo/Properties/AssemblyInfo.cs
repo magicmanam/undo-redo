@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("magicmanam.UndoRedo")]
@@ -14,5 +15,7 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("2a0ea8a3-5e8c-411f-bf3d-b2d67ad5e956")]
 
-[assembly: AssemblyVersion("1.1.0.0")]
-[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: InternalsVisibleTo("magicmanam.UndoRedo.Tests")]
+
+[assembly: AssemblyVersion("1.1.4.0")]
+[assembly: AssemblyFileVersion("1.1.4.0")]

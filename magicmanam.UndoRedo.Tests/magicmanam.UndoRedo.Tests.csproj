@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UndoableActionEventArgsTests.cs" />
     <Compile Include="UndoableContextTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatefulComponent.cs" />

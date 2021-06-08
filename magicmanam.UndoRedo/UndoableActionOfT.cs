@@ -33,7 +33,7 @@ namespace magicmanam.UndoRedo
 
         public void Dispose()
         {
-            this.ActionEnd?.Invoke(this, new UndoableActionEventArgs<T>(this));
+            this.ActionEnd?.Invoke(this, new UndoableActionEventArgs<T>(this, false, false));
         }
     }
 }

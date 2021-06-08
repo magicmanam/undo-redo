@@ -42,11 +42,6 @@
     <Compile Include="UndoableContextOfT.cs" />
     <Compile Include="UndoableActionOfT.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="magicmanam.UndoRedo.nuspec">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="images\icon.png" />
