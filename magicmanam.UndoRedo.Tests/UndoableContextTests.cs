@@ -7,9 +7,9 @@ namespace magicmanam.UndoRedo.Tests
     [TestClass]
     public class UndoableContextTests
     {
-        private StatefulComponent _component;
-        private UndoableContext<List<int>> _undoableContext;
-        private List<string> _actionsList = new List<string>();
+        private readonly StatefulComponent _component;
+        private readonly UndoableContext<List<int>> _undoableContext;
+        private readonly List<string> _actionsList = new List<string>();
 
         public UndoableContextTests()
         {
